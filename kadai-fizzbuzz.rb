@@ -11,9 +11,9 @@
 # 1から num_max までの整数値についてループを作り、FizzBuzzのメソッドを実行します
 # FizzBuzzのメソッドの戻り値をターミナルに表示してください
 
-def FizzBuzz
-  num_max = 100
-  (1..num_max).each do |num|
+num_max = 100
+
+def fizzbuzz(num)
     if num % 15 == 0
       puts "FizzBuzz"
     elsif num % 3 == 0
@@ -23,7 +23,8 @@ def FizzBuzz
     else
       puts num
     end
-  end
 end
 
-FizzBuzz()
+  (1..num_max).each do |num|
+    fizzbuzz(num)
+  end
